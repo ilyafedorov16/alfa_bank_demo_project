@@ -1,0 +1,258 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1622900150.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "data",
+    "pagination"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/data/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "fiasId",
+          "fiasName",
+          "ajsonId",
+          "cityNameRus",
+          "path",
+          "cityNameNorm",
+          "genitiveName",
+          "prepositionalName",
+          "regionId",
+          "regionName",
+          "regionType",
+          "regionTypeFull",
+          "regionIsoCode",
+          "latitude",
+          "longitude",
+          "parentCityId",
+          "cityDepartment",
+          "cityTimezone"
+        ],
+        "properties": {
+          "fiasId": {
+            "$id": "#root/data/items/fiasId",
+            "title": "Fiasid",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "0c5b2444-70a0-4932-980c-b4dc0d3f02b5"
+            ],
+            "pattern": "^.*$"
+          },
+          "fiasName": {
+            "$id": "#root/data/items/fiasName",
+            "title": "Fiasname",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "г Москва"
+            ],
+            "pattern": "^.*$"
+          },
+          "ajsonId": {
+            "$id": "#root/data/items/ajsonId",
+            "title": "Ajsonid",
+            "type": "integer",
+            "examples": [
+              21
+            ],
+            "default": 0
+          },
+          "cityNameRus": {
+            "$id": "#root/data/items/cityNameRus",
+            "title": "Citynamerus",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Москва"
+            ],
+            "pattern": "^.*$"
+          },
+          "path": {
+            "$id": "#root/data/items/path",
+            "title": "Path",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "moscow"
+            ],
+            "pattern": "^.*$"
+          },
+          "cityNameNorm": {
+            "$id": "#root/data/items/cityNameNorm",
+            "title": "Citynamenorm",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "москва"
+            ],
+            "pattern": "^.*$"
+          },
+          "genitiveName": {
+            "$id": "#root/data/items/genitiveName",
+            "title": "Genitivename",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Москвы"
+            ],
+            "pattern": "^.*$"
+          },
+          "prepositionalName": {
+            "$id": "#root/data/items/prepositionalName",
+            "title": "Prepositionalname",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Москве"
+            ],
+            "pattern": "^.*$"
+          },
+          "regionId": {
+            "$id": "#root/data/items/regionId",
+            "title": "Regionid",
+            "type": "integer",
+            "examples": [
+              77
+            ],
+            "default": 0
+          },
+          "regionName": {
+            "$id": "#root/data/items/regionName",
+            "title": "Regionname",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Москва"
+            ],
+            "pattern": "^.*$"
+          },
+          "regionType": {
+            "$id": "#root/data/items/regionType",
+            "title": "Regiontype",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "г"
+            ],
+            "pattern": "^.*$"
+          },
+          "regionTypeFull": {
+            "$id": "#root/data/items/regionTypeFull",
+            "title": "Regiontypefull",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "город"
+            ],
+            "pattern": "^.*$"
+          },
+          "regionIsoCode": {
+            "$id": "#root/data/items/regionIsoCode",
+            "title": "Regionisocode",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "RU-MOW"
+            ],
+            "pattern": "^.*$"
+          },
+          "latitude": {
+            "$id": "#root/data/items/latitude",
+            "title": "Latitude",
+            "type": "number",
+            "examples": [
+              55.7540471
+            ],
+            "default": 0.0
+          },
+          "longitude": {
+            "$id": "#root/data/items/longitude",
+            "title": "Longitude",
+            "type": "number",
+            "examples": [
+              37.620405
+            ],
+            "default": 0.0
+          },
+          "parentCityId": {
+            "$id": "#root/data/items/parentCityId",
+            "title": "Parentcityid",
+            "type": "integer",
+            "examples": [
+              0
+            ],
+            "default": 0
+          },
+          "cityDepartment": {
+            "$id": "#root/data/items/cityDepartment",
+            "title": "Citydepartment",
+            "type": "null",
+            "default": null
+          },
+          "cityTimezone": {
+            "$id": "#root/data/items/cityTimezone",
+            "title": "Citytimezone",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "UTC+3"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    },
+    "pagination": {
+      "$id": "#root/pagination",
+      "title": "Pagination",
+      "type": "object",
+      "required": [
+        "limit",
+        "offset",
+        "totalCount"
+      ],
+      "properties": {
+        "limit": {
+          "$id": "#root/pagination/limit",
+          "title": "Limit",
+          "type": "integer",
+          "examples": [
+            20
+          ],
+          "default": 0
+        },
+        "offset": {
+          "$id": "#root/pagination/offset",
+          "title": "Offset",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "totalCount": {
+          "$id": "#root/pagination/totalCount",
+          "title": "Totalcount",
+          "type": "integer",
+          "examples": [
+            1
+          ],
+          "default": 0
+        }
+      }
+    }
+
+  }
+}
