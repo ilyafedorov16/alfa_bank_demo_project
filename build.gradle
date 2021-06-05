@@ -94,3 +94,15 @@ task api(type: Test) {
         includeTags 'api'
     }
 }
+
+task positive(type: Test) {
+    useJUnitPlatform {
+        includeTags 'positive'
+    }
+}
+
+task web(type: Test) {
+    useJUnitPlatform {
+        includeTags 'web'
+    }
+}

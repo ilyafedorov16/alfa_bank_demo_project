@@ -12,7 +12,7 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-@Tags({@Tag("web"),@Tag("positive")})
+@Tags({@Tag("web"),@Tag("positive"),@Tag("ui")})
 public class StepTests extends TestBase {
 
     @Test
