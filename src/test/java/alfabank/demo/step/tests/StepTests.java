@@ -17,7 +17,7 @@ public class StepTests extends TestBase {
 
     @Test
     @Owner("Ilya Fedorov")
-    @DisplayName("Проверка подачи заявки на открытие брокерсокого счета")
+    @DisplayName("Проверка ипотечного калькулятора")
     void calculatorTest(){
         step("Открываем главную страницу", () -> open("https://alfabank.ru/"));
 
@@ -40,14 +40,9 @@ public class StepTests extends TestBase {
             $("#creditTerm").shouldHave(Condition.value("5").because("Мы ввели срок кредитования 5 лет"));
         });
 
-        step("Ставим чекбокс являюсь  зарплатным клиентом", () -> {
-            $(byText("Я зарплатный клиент Альфа-Банка")).click();
-        });
 
         step("Проверяем что на странице присутствует кнопка заполнить заявку", () -> {
             $("#buttonId").shouldBe((Condition.visible));
-            $("[data-test-id='mortgage-calculator']").shouldHave(Condition.text("11 597 ₽").because("Мы рассчитали Сумму ежемесячного платежа"),Condition.text("601 000").because("Мы ввели  сумму кредита = 600 тыс"),Condition.text("104 237").because("Мы расситали сумму налогового вычета"));
-
         });
     }
 
