@@ -1,1 +1,1 @@
-# odobrim_ru_demo
+# Demo project for AlfaBank
